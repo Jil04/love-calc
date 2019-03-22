@@ -1,0 +1,178 @@
+<html>
+    <head>
+       <title>ARRAY METHODS</title>
+       <link rel="stylesheet"   href="style.css" type="text/css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+       
+       
+    </head>
+<body id="bady">
+<div class="sticky">
+               <div id="header" class="container">
+                       <div class="row">
+                           <div class="col-md-4">
+                                <h1 class="glow"> CHAT WITH<br>
+                                    EMOTION DETECTOR
+                                </h1>
+                            </div>
+                            <div class="col-md-8">
+                            
+                          
+                                <button id="button01" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                    
+                                <div id="id01" class="modal">
+                                
+                                <form class="modal-content animate" action="">
+                                    <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                    </div>
+        
+                                    <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                    <button type="submit" >Login <a id="chat" href="chat.html"></a></button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+        
+                                    <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+               </div>             
+</div>
+
+                    
+
+                    <center>
+                            <div id="dashboard"></div><br>
+                            <input class="form-control" id="val" type="text" placeholder="Boyfriend-Name!!!" name="required" >; 
+                            <input class="form-control"  id="vel" type="text" placeholder="Girlfriend-Name!!!" name="required">    
+                            <div class="button">
+                                    <button id="butn" onClick="UNSHIFTer()" class="bntn btn-warning">ADD</button>
+                                    <button id="butn"  onClick="pusher()" class=" bntn btn-success" type="submit" value="submit">calculate</button>
+                                    <button id="butn"  onClick="popper()" class="bntn btn-danger">DELETE</button>
+                                    
+                            </div>
+                        
+                    
+                    </center>
+                    <div class="container" id="Jesse">
+                        <div class="row">
+                            <div class="column">
+                                    <div class="hero-image">
+                                            <div class="hero-text">
+                                                <h1 style="font-size:50px">I am Jesse Luke by name.</h1>
+                                                <p>And I'm a Photographer</p>
+                                              <div class="dropdown">
+                                                <button onclick="myFunction()" class="dropbtn">Hire me</button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                    call me:09065379802<br>
+                                                    Or Inbox<br>
+                                                    Gmail:
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>      
+                                <h2>Chose A Song and love It</h2>
+                                <audio controls id="lucid-dreams">
+                                    <source src="Juice_WRLD_-_Lucid_Dreams_Forget_Me__Mp3bullet.ng.mp3" type="audio/ogg";text="Juice_WRLD_-_Lucid_Dreams_mp3">
+                                    <source src="Juice_WRLD_-_Lucid_Dreams_Forget_Me__Mp3bullet.ng.mp3" type="audio/mpeg">
+                                </audio>
+                                <audio controls id="lucid-dreams">
+                                        <source src="Kiss_Daniel_4Dayz_9jaflaver.com_.mp3" type="audio/ogg";>
+                                        <source src="Kiss_Daniel_4Dayz_9jaflaver.com_.mp3" type="audio/mpeg">
+                                    </audio> 
+                            </div>
+                        </div>
+                        </div>
+                
+
+
+
+            <script type="text/javascript">
+            // this array is used to illustrate the
+                var  friends = [""];
+                for(var i = 0; i < friends.length; i++){
+                    document.getElementById("dashboard")
+                    .innerHTML += friends[i] +'!!!!   ';
+                }
+            function pusher(){
+                    var vall = document.getElementById("val")
+                    .value;
+                    document.getElementById("dashboard")
+                    .innerHTML = friends.push();
+                    document.getElementById("dashboard")
+                    .innerHTML = friends;
+                    document.getElementById("val")
+                    .value = "";
+
+                    var valll = document.getElementById("vel")
+                    .value;
+                   
+                    var getLenv1 = vall.length;
+                    var getLenv2 = valll.length;
+                    var totalLen = getLenv1 + getLenv2;
+                    document.getElementById("dashboard")
+                    .innerHTML = friends.push(totalLen);
+                    document.getElementById("dashboard")
+                    .innerHTML = friends;
+                    document.getElementById("vel")
+                    .value = "";
+
+            }
+            function popper(){
+                var vall = document.getElementById("val")
+                    .value;
+                    document.getElementById("dashboard")
+                    .innerHTML = friends.pop(vall);
+                    document.getElementById("dashboard")
+                    .innerHTML = friends;
+                    document.getElementById("val")
+                    .value = "";
+            }
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+            
+            </script>
+
+
+
+                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+            
+                </body>
+            </html>

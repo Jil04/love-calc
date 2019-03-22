@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <body>
+            <title>Web form</title>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+            <style>
+            body{
+                background-color: green;
+
+            }
+            input{
+                background-color: grey;
+            }
+            </style>
+        </body>
+
+        <body>
+            <form>
+                <fieldset>
+                    <legend> Personal Information</legend>
+                    <div class="">
+                        <label for="firstname "> FIRSTNAME: </label>
+                        <input type="text" placeholder="SIMI" name:"firstname" required>
+                    </div>
+                    <br>
+
+                    <div class="">
+                        <label for="lastname"> LASTNAME: </label>
+                        <input type="text" placeholder="ADE" name: "lastname" required>
+                    </div>
+                    <br>
+
+                    <div class="">
+                        <label for="dob"> DOB: </label>
+                        <input type="date" placeholder="dob">
+                    </div>
+                    <br>
+
+                    <div class="">
+                        <label for="gender"> GENDER: </label><br>
+                        <input type="radio" name="gender"> MALE:<br>
+                        <input type="radio" name="gender"> FEMALE: <br>
+                    </div>
+                    <br>
+
+                    <div class="">
+                        <label for="email">EMAIL: </label>
+                        <input type="email" name="email" placeholder="lawrence.ojm@gmail.com" required>
+                    </div>
+
+                    <br>
+
+                    <div class="">
+                        <label for="hobbies"> HOBBIES: </label><br>
+                        <input type="checkbox" name: "reading"> Reading<br> 
+                        <input type="checkbox" name: "swimming"> Swimming<br> 
+                        <input type="checkbox" name: "singing"> Singing<br>
+                        <input type="checkbox" name: "coding"> Coding<br>  
+                    </div>
+                    <br>
+                    <div class="">
+                        <label for="state"> STATE OF ORIGIN: </label>
+                        <select>
+                            <option value:"Abia">ABIA</option>
+                            <option value:"Kaduna">KADUNA</option>
+                            <option value:"delta">DELTA</option>
+                            <option value:"kastina">KASTINA</option>
+                            <option value:"kano">KANO</option>
+                            <option value:"lagos">LAGOS</option>
+                            <option value:"kogi">KOGI</option>
+                            <option value:"oyo">OYO</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="">
+                        <label type="passport">PASSWORD: </label>
+                        <input type="file" required>
+                    </div>
+
+                    <br>
+
+                    <div class="">
+                        <input style="background-color: yellow" type="submit"   value="SUBMIT">
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                        <legend> Credit Card Payment</legend>
+                        <form class="credit-card">
+                                <div class="form-header">
+                                        <h4 class="title">Credit Card Detail</h4>
+                                </div>
+
+                                <div class="">
+                                        <label for="credit-card"> Card Type: </label><br>
+                                        <img src= "visa.jpg" width="80" height="40"> <input type="radio" name="credit-card"> VISACARD: 
+                                            
+                                        <img src= "mastercard.gif" width="80" height="40"> <input type="radio" name="credit-card"> MASTERCARD: <br>
+                                        <br>
+                                             
+                                    </div>
+                                
+                                
+                                <br>
+                                <h3> Card Expiry Date</h3>
+                                <div class="form-body">
+                                        <input type="text" class="card-number" placeholder="**** **** **** ****"><br>
+
+                                        <br>
+                                        <div class="date-field">
+                                          <div class="month">
+                                            <select name="Month">
+                                              <option value="january">January</option>
+                                              <option value="february">February</option>
+                                              <option value="march">March</option>
+                                              <option value="april">April</option>
+                                              <option value="may">May</option>
+                                              <option value="june">June</option>
+                                              <option value="july">July</option>
+                                              <option value="august">August</option>
+                                              <option value="september">September</option>
+                                              <option value="october">October</option>
+                                              <option value="november">November</option>
+                                              <option value="december">December</option>
+                                            </select>
+                                          </div>
+                                          
+                                          <br>
+                                          <div class="year">
+                                                <select name="Year">
+                                                  <option value="2016">2016</option>
+                                                  <option value="2017">2017</option>
+                                                  <option value="2018">2018</option>
+                                                  <option value="2019">2019</option>
+                                                  <option value="2020">2020</option>
+                                                  <option value="2021">2021</option>
+                                                  <option value="2022">2022</option>
+                                                  <option value="2023">2023</option>
+                                                  <option value="2024">2024</option>
+                                                </select>
+                                            </div>
+                                            <br>
+                                            <div class="card-verification">
+                                                    <div class="cvv-input">
+                                                      <input type="text" placeholder="CVV">
+                                                    </div>
+                                                    <div class="cvv-details">
+                                                      <p>3 or 4 digits usually found <br> on the signature strip</p>
+                                                    </div>
+                                                  </div>
+
+            </form>
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+        </body>
+    </head>
+</html>

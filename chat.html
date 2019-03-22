@@ -1,0 +1,79 @@
+<html>
+    <head>
+       <title>ARRAY METHODS</title>
+       <link rel="stylesheet"   href="style.css" type="text/css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+       
+       
+    </head>
+    <body id="bady">
+          <div class="sticky">
+                <div id="header" class="container">
+                        <div class="row">
+                          <div class="col-md-4">
+                                <h1 class="glow"> CHAT WITH<br>
+                                    EMOTION DETECTOR
+                                </h1>
+                            </div>
+                        </div>
+                    <center>
+                            <div id="dashboard"></div><br>
+                            <input class="form-control" id="val" type="text" placeholder="Boyfriend-Name!!!"> 
+                            <input class="form-control"  id="val" type="text" placeholder="Girlfriend-Name!!!">    
+                            <div on-touch="rotatebutton()"  style="transform: rotateY(360deg);">
+                                    <button id="butn" onClick="UNSHIFTer()" class="bntn btn-warning">ADD</button>
+                                    <button id="butn"  onClick="pusher()" class=" bntn btn-success">calculate</button>
+                                    <button id="butn"  onClick="popper()" class="bntn btn-danger">DELETE</button>
+                                    
+                            </div>
+                        
+                    
+                    </center>
+
+
+
+            <script type="text/javascript">
+            // this array is used to illustrate the
+                var  friends = ["ANSWERS"];
+                for(var i = 0; i < friends.length; i++){
+                    document.getElementById("dashboard")
+                    .innerHTML += friends[i] +'!!!!   ';
+                }
+            function pusher(){
+                    var vall = document.getElementById("val")
+                    .value;
+                    document.getElementById("dashboard")
+                    .innerHTML = friends.push(vall);
+                    document.getElementById("dashboard")
+                    .innerHTML = friends;
+                    document.getElementById("val")
+                    .value = "";
+            }
+            function popper(){
+                var vall = document.getElementById("val")
+                    .value;
+                    document.getElementById("dashboard")
+                    .innerHTML = friends.pop(vall);
+                    document.getElementById("dashboard")
+                    .innerHTML = friends;
+                    document.getElementById("val")
+                    .value = "";
+            }
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            
+            </script>
+
+
+
+                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+            
+                </body>
+            </html>
